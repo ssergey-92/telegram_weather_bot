@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "weather-bot"
+version = "0.1.0"
+description = "Telegram Weather Bot"
+authors = ["Sergey Solop <solop1992@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytelegrambotapi = "4.23.0"
+python-dotenv = "1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
