@@ -1,5 +1,5 @@
 BOT_TOKEN= # Telegram bot token
-OPEN_WEATHER_KEY= # Secret Key for OpenWeatherMap
+OPEN_WEATHER_MAP_KEY= # Secret Key for OpenWeatherMap
 
 BOT_NAME=
 ENCODING=
