@@ -1,0 +1,20 @@
+#version: '3.9'
+
+services:
+
+  weather_bot:
+    build:
+      context: ./
+    container_name: weather_bot
+    restart: always
+    stop_signal: SIGKILL
+    env_file:
+      - .env
+    volumes:
+      - ./logs/:/weather_bot/logs/
+    logging:
+      driver: json-file
+      options:
+        max-file: ${DOCKER_LOGGER_MAX_FILES}
+        max-size: ${DOCKER_LOGGER_FILE_SIZE}
+
