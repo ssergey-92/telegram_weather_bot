@@ -11,6 +11,7 @@ from bot_logger import app_logger
 
 class OpenWxMap:
     """Class OpenWxMap is used to take data from 'Open Weather Map'."""
+
     _base_url = "http://api.openweathermap.org/"
     _api_key = os_getenv("OPEN_WEATHER_MAP_KEY")
     _cities_coordinates_endpoint = "geo/1.0/direct"
@@ -19,7 +20,6 @@ class OpenWxMap:
     _request_timeout = 4
     _wx_units = "metric"
     _wx_report_lang = "en"
-
 
     @classmethod
     def get_possible_cities(cls, city_name: str) -> Optional[list]:
@@ -35,7 +35,7 @@ class OpenWxMap:
                     "q": city_name,
                     "limit": cls._possible_cities_limit,
                     "appid": cls._api_key,
-                    },
+                },
                 timeout=cls._request_timeout,
             )
             app_logger.info(f"{response.url=}, {response.status_code=}")

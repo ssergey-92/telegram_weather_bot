@@ -1,3 +1,5 @@
+"""Module for starting  telegram weather bot."""
+
 from sys import exit as sys_exit
 
 from telebot.custom_filters import StateFilter
@@ -17,7 +19,7 @@ def load_telegram_bot() -> None:
     bot.infinity_polling(skip_pending=True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     load_telegram_bot()
 else:
-    sys_exit('Access is denied!')
+    sys_exit("Access is denied!")

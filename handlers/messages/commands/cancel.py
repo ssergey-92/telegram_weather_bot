@@ -9,8 +9,8 @@ from config_data.config import INTERNAL_ERROR_BOT_RESPONSE, CANCEL_COMMAND
 from keyboards.inlines.options import options_inline_keyboard
 
 cancel_msg = (
-        "Your weather search state was canceled!"
-        "\nSelect one of the below options:"
+    "Your weather search state was canceled!"
+    "\nSelect one of the below options:"
 )
 
 

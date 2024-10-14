@@ -21,23 +21,22 @@ msg_city_not_found = (
 )
 uncorrect_city_name_error = (
     "Enter city name using ENGLISH letters and 1 space or hyphen if "
-     "required!\n(ex. Moscow, Saint-Petersburg)"
+    "required!\n(ex. Moscow, Saint-Petersburg)"
 )
 
 
 def validate_city_name(city_name: str) -> Optional[str]:
-    """ Check city name that match the format.
+    """Check city name that match the format.
 
     Check that city name contains english letters and 1 space or hyphen in
     between.
 
     """
 
-    pattern = r'^[A-Za-z]{2,}[\s\-]?[A-Za-z]{2,}$'
+    pattern = r"^[A-Za-z]{2,}[\s\-]?[A-Za-z]{2,}$"
     city_name = re_match(pattern, city_name)
     if not city_name:
         return uncorrect_city_name_error
-
 
 
 @bot.message_handler(state=CurrentCityWeather.input_city)

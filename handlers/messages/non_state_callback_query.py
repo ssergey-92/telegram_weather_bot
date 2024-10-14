@@ -7,6 +7,7 @@ from bot_logger import app_logger
 from config_data.config import CITY_WEATHER_COMMAND
 from loader import bot
 
+
 @bot.callback_query_handler(func=lambda call: True)
 def callback_query(call: CallbackQuery) -> None:
     """Catch unstated incoming callback query from inline keyboard.

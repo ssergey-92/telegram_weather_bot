@@ -4,6 +4,7 @@ from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config_data.config import CITY_WEATHER_COMMAND
 
+
 def get_options_inline_keyboard() -> InlineKeyboardMarkup:
     """Create inline keyboard telegram bot options commands."""
 

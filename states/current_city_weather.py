@@ -2,6 +2,7 @@
 
 from telebot.handler_backends import State, StatesGroup
 
+
 class CurrentCityWeather(StatesGroup):
     """
     Class CurrentCityWeather for getting current wx in city scenario.

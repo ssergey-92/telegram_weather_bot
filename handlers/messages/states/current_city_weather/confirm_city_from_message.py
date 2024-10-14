@@ -26,7 +26,7 @@ def handle_confirm_city_from_msg(message: Message) -> None:
         bot.send_message(
             message.chat.id,
             select_city_notice,
-            reply_markup=get_possible_cities_keyboard(possible_cities)
+            reply_markup=get_possible_cities_keyboard(possible_cities),
         )
     except Exception as exc:
         app_logger.error(format_exc())

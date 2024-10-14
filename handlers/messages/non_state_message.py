@@ -15,7 +15,7 @@ unrecognised_reply_msg = (
 
 @bot.message_handler()
 def non_state_text_message(message: Message) -> None:
-    """ Catch unstated incoming user message.
+    """Catch unstated incoming user message.
 
     Compare message text with possible welcome message and send appropriate
     reply.

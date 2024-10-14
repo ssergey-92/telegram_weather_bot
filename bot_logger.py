@@ -35,9 +35,7 @@ def get_rotating_file_handler() -> RotatingFileHandler:
 
     logs_path = get_logs_dir_path()
     create_directory(logs_path)
-    logs_file_path = os_path.join(
-        logs_path, os_getenv("LOGGER_FILES_NAME")
-    )
+    logs_file_path = os_path.join(logs_path, os_getenv("LOGGER_FILES_NAME"))
     rotating_file_handler = RotatingFileHandler(
         filename=logs_file_path,
         mode="a",

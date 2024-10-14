@@ -1,5 +1,3 @@
-#version: '3.9'
-
 services:
 
   weather_bot:
@@ -17,4 +15,3 @@ services:
       options:
         max-file: ${DOCKER_LOGGER_MAX_FILES}
         max-size: ${DOCKER_LOGGER_FILE_SIZE}
-

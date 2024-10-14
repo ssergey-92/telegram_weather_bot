@@ -10,8 +10,8 @@ from config_data.config import INTERNAL_ERROR_BOT_RESPONSE, START_COMMAND
 from keyboards.inlines.options import options_inline_keyboard
 
 welcome_msg = (
-        "Welcome, {name}!\nI'm {bot_name}.\nI can find for your current "
-        "weather in city."
+    "Welcome, {name}!\nI'm {bot_name}.\nI can find for your current "
+    "weather in city."
 )
 
 

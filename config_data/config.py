@@ -22,6 +22,7 @@ INTERNAL_ERROR_BOT_RESPONSE = (
     "Sorry bot is currently unavailable. Kindly try again latter!"
 )
 
+
 def load_env_data() -> None:
     """Load .env if bot is running without Docker."""
 

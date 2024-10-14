@@ -1,7 +1,9 @@
 """Module for creating cities inline keyboard"""
+
 from json import dumps as json_dumps
 
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
+
 
 def get_full_city_name(city_data: dict) -> str:
     name = city_data.get("name", "")
@@ -14,7 +16,7 @@ def get_full_city_name(city_data: dict) -> str:
 
 
 def get_possible_cities_keyboard(
-        found_cities: list[dict],
+    found_cities: list[dict],
 ) -> InlineKeyboardMarkup:
     """Create inline keyboard with found cities names."""
 
